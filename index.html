@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.js"></script>
+  <script type="module" src="js/main.js" defer></script>
+  <style>
+    body
+    {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="bg-dark d-flex align-items-center justify-content-center">
+  <form
+    style="max-width: 350px;"
+    class="text-white"
+  >
+    <h5 class="mb-3">Number (Amex, Discover, Maestro, Mastercard, Visa)</h5>
+    <div class="row align-items-center mb-3">
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          id="credit-card"
+          name="credit-card"
+          placeholder="0000 0000 0000 0000"
+        />
+      </div>
+      <div class="col-3">
+        <img src="" alt="" width="50">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <h5 class="mb-3">CVV</h5>
+        <input
+        type="text"
+        class="form-control"
+        id="cvv"
+        name="cvv"
+        placeholder="000"
+        />
+      </div>
+      <div class="col">
+        <h5 class="mb-3">Expiration</h5>
+        <input
+          type="text"
+          class="form-control"
+          id="expiration"
+          name="expiration"
+          placeholder="00/00"
+        />
+      </div>
+    </div>
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary" disabled>Register card</button>
+    </div>
+  </form>
+</body>
+</html>
